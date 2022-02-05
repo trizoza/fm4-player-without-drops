@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>FM4</title>
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <video id="fm4" controls="" autoplay="" name="media">
+      <source
+        src="https://orf-live.ors-shoutcast.at/fm4-q2a?player=radiothek_v1&amp;referer=fm4.orf.at&amp;userid=e6809755-bab3-480b-a1aa-f7d470cdecd2"
+        type="audio/mpeg"
+      />
+    </video>
+  </body>
+  <script>
+    const video = document.querySelector("video");
+    video.addEventListener("stalled", (event) => {
+      video.load();
+    });
+  </script>
+</html>
